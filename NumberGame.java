@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class NumberGame {
     static int count=2;
-    static boolean correct = false;
 
     public static void Start(){
        int guess;
@@ -13,22 +12,27 @@ public class NumberGame {
        System.out.println(answer);
        System.out.println("--------------------WELCOME TO NUMBER GUESS GAME-----------------");
        System.out.println("Guess a number between 1 to 100: ");
-       while (!correct) {
-           if(count>-1){
+       while (true) {
+           if(count>-1)
+           {
                guess = sc.nextInt();
 
                if (guess > answer) {
                    if(count!=0) {
                        System.out.println("Too high, try again "+ count + " Chances left");
-                   }}
+                   }
+               }
                    else if (guess < answer) {
                    if(count!=0) {
                        System.out.println("Too low, try again "+ count + " Chances left");
-                   } } else {
+                   }
+                   }
+                   else {
                    System.out.println("Congrats, you guessed the number.");
                    Choice();
                    return;
-               }}
+               }
+           }
            else{
                System.out.println("Sorry your chances over. Please retart the game!!!");
                Choice();
