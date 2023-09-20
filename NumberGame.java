@@ -2,14 +2,14 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class NumberGame {
-    static int count=2;
+  int count=2;
 
     public static void Start(){
        int guess;
+       int count=2;
        Scanner sc=new Scanner(System.in);
        Random rand = new Random();
        int answer = rand.nextInt(100) + 1;
-       System.out.println(answer);
        System.out.println("--------------------WELCOME TO NUMBER GUESS GAME-----------------");
        System.out.println("Guess a number between 1 to 100: ");
        while (true) {
