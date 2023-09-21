@@ -30,13 +30,13 @@ public class NumberGame {
                    else {
                    System.out.println("Congrats, you guessed the number.");
                    Choice();
-                   return;
+                   break;
                }
            }
            else{
                System.out.println("Sorry your chances over. Please retart the game!!!");
                Choice();
-               return;
+               break;
 
            }
            count--;
@@ -49,10 +49,9 @@ public class NumberGame {
        count=2;
        switch (st){
            case 1:Start();
-                 return;
-           case 2: return;
+                 break;
+           case 2: break;
        }
-       return;
    }
 
     public static void main(String[] args) {
