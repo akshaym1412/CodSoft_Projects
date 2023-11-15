@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class NumberGame {
-  int static count=2;
+  static int  count=2;
 
     public static void Start(){
        int guess;
